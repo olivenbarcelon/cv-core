@@ -13,4 +13,8 @@ describe('Index', () => {
 
         expect(download.disabled).toBeTruthy();
     });
+
+    it("It should download file validate load event", () => {
+        expect(window.dispatchEvent(new CustomEvent("load"))).toBeTruthy();
+    });
 });
