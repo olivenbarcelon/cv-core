@@ -430,7 +430,17 @@ class CurriculumVitae {
     }
 }
 
-let root = document.getElementById("root");
-let curriculumVitae = new CurriculumVitae();
-root.innerHTML = curriculumVitae.render();
-document.getElementById("download").addEventListener("click", onClick);
+window.addEventListener("load", (e) => {
+    if(e.detail === undefined || e.detail === null) return;
+
+    let root = document.getElementById("root");
+    let curriculumVitae = new CurriculumVitae();
+    root.innerHTML = curriculumVitae.render();
+    document.getElementById("download").addEventListener("click", onClick);
+});
+
+window.dispatchEvent(
+    new CustomEvent("load", {
+        detail: "Dispatch Event"
+    })
+);
