@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
 
-.material-symbols-outlined {
-    color: var(--light-sea-green);
-}
-
 :root {
     --dark-cyan: #008B8B;
     --dim-gray: #696969;
@@ -14,121 +10,135 @@
     --white: #FFF;
     --white-smoke: #F5F5F5;
 }
-
+/* Box sizing rules */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+}
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
     margin: 0;
-    padding: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+    line-height: 1.1;
+}
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+    text-wrap: balance;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+    font: inherit;
+}
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+    min-height: 10em;
+}
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+    scroll-margin-block: 5ex;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+.box > .title {
+    background-color: var(--white-smoke);
+    font-weight: bold;
+    font-size: large;
+    padding: 0.2em;
+}
+
+.button-icon {
+    border: none;
+    border-radius: 4px;
+    padding: 0px;
+    line-height: 0px;
+    text-align: center;
+    vertical-align: middle;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button-icon-transparent {
+    background-color: transparent;
+}
+
+.button-icon-transparent:hover {
+    background-color: var(--white-smoke);
 }
 
 .container {
-    display: grid;
-    grid-template-areas:
-        'row'
-        'footer';
-}
-
-.row {
-    grid-area: row;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    padding: 8px 32px
+    width: 100%;
+    min-height: 100vmax;
+    margin-bottom: 1.5rem;
 }
 
 .footer {
-    grid-area: footer;
     background-color: var(--light-sea-green);
     color: var(--white);
-    padding: 8px;
+    width: 100%;
+    height: 1.5rem;
+    position: fixed;
+    bottom: 0;
     text-align: center;
 }
 
-img {
-    width: 100%;
+.group > [class*="material-"], .group > [for] {
+    padding: 0px;
+    vertical-align: middle;
 }
 
-.group {
-    display: -ms-flexbox;
-    display: flex;
-    padding: 4px 8px;
+.indent {
+    text-indent: 2em;
 }
 
-.group label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.material-symbols-outlined {
+    color: var(--light-sea-green);
+}
+
+.p-4 {
     padding: 4px;
 }
 
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-style: solid;
-    border-width: 1px 0px 0px;
-    border-color: rgba(0, 0, 0, 0.1);
-}
-
-.card > label {
-    margin-left: 8px;
-}
-
-.card > p {
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 50px;
-    padding: 4px 16px;
-}
-
-progress {
-    opacity: 0;
-}
-  
-.progress-element {
+.progress {
     border-radius: 25px;
     margin: 8px;
     padding: 1px;
 }
 
-.progress-container {
-    position: relative;
-    background-color: var(--white-smoke);
-    height: 20px;
-    border-radius: 25px;
-    overflow: hidden;
-}
-
-.progress-container::before {
-    content: "";
-    position: absolute;
-    background-color: var(--light-sea-green);
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0px;
-}
-
-.progress-element--100 .progress-container::before {
-    animation: progress-100 1s ease-in forwards;
-}
-
-.progress-element--75 .progress-container::before {
-    animation: progress-75 1s ease-in forwards;
-}
-
 .progress-label {
     position: relative;
-}
-
-@property --num {
-    syntax: "<integer>";
-    initial-value: 0;
-    inherits: false;
 }
 
 .progress-label::after {
@@ -139,21 +149,78 @@ progress {
     right: 0;
 }
 
-.progress-element--100 .progress-label::after {
+.progress-bar {
+    position: relative;
+    background-color: var(--white-smoke);
+    height: 20px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    background-color: var(--light-sea-green);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0px;
+}
+
+.progress-100 .progress-bar::before {
+    animation: progress--100 1s ease-in forwards;
+}
+
+.progress-75 .progress-bar::before {
+    animation: progress--75 1s ease-in forwards;
+}
+
+.progress-100 .progress-label::after {
     animation: progress-text-100 1s ease-in forwards;
 }
 
-.progress-element--75 .progress-label::after {
+.progress-75 .progress-label::after {
     animation: progress-text-75 1s ease-in forwards;
 }
 
-@keyframes progress-100 {
+a img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+hr {
+    width: 98%;
+    border-style: solid;
+    border-width: 1px 0px 0px;
+    border-color: rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+label[for*="year"] {
+    color: var(--light-sea-green);
+}
+
+progress {
+    opacity: 0;
+}
+
+[class="box"] {
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    margin: 0.4em;
+}
+
+[class="box"] > .body {
+    padding: 0.4em;
+}
+
+@keyframes progress--100 {
     to {
         width: 100%;
     }
 }
 
-@keyframes progress-75 {
+@keyframes progress--75 {
     to {
         width: 75%;
     }
@@ -170,65 +237,78 @@ progress {
         --num: 75;
     }
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    [class*="column-"] {
+        width: 100%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+} 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    [class*="column-"] {
+        float: left;
+    }
 
-.frame {
-    margin: 8px;
-    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    .column-1 {
+        width: 8.33%;
+    }
+
+    .column-2 {
+        width: 16.66%;
+    }
+
+    .column-3 {
+        width: 25%;
+    }
+
+    .column-4 {
+        width: 33.33%;
+    }
+
+    .column-5 {
+        width: 41.66%;
+    }
+
+    .column-6 {
+        width: 50%;
+    }
+
+    .column-7 {
+        width: 58.33%;
+    }
+
+    .column-8 {
+        width: 66.66%;
+    }
+
+    .column-9 {
+        width: 75%;
+    }
+
+    .column-10 {
+        width: 83.33%;
+    }
+
+    .column-11 {
+        width: 91.66%;
+    }
+
+    .column-12 {
+        width: 100%;
+    }
 }
 
-.frame > .title {
-    font-weight: bold;
-    font-size: large;
-    background-color: var(--white-smoke);
-}
-
-.frame > .title > .group {
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.frame > .title > .group label {
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.frame > .body {
-    padding: 8px;
-}
-
-.section > .title {
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    height: 2rem;
-    font-weight: bold;
-    font-size: large;
-}
-
-.section > .body {
-    display: grid;
-}
-
-label[for*="year"] {
-    color: var(--light-sea-green);
-}
-
-.button {
-    border-radius: 4px;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.button-transparent {
-    background-color: transparent;
-}
-
-.button-transparent:hover {
-    background-color: var(--white-smoke);
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
 }
