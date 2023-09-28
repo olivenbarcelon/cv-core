@@ -186,53 +186,46 @@ class CurriculumVitae {
                                 </div>
 
                                 <div class="body">
-                                    <div class="section">
-                                        <div class="title">Cavite State University - Naic Campus</div>
-
-                                        <div class="body">
-                                            <label for="school">Bucana, Naic, Cavite</label>
-
-                                            <label for="location">Bachelor of Science in Computer Science</label>
-
+                                    <dl>
+                                        <dt>Cavite State University - Naic Campus</dt>
+                                        <dd>Bucana, Naic, Cavite</dd>
+                                        <dd>Bachelor of Science in Computer Science</dd>
+                                        <dd>
                                             <div class="group">
                                                 <span class="material-symbols-outlined">calendar_month</span>
 
                                                 <label for="year">2009 - 2014</label>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </dd>
+                                    </dl>
 
                                     <hr />
 
-                                    <div class="section">
-                                        <div class="title">Rosario National High School</div>
-
-                                        <div class="body">
-                                            <label for="location">Rosario, Cavite</label>
-
+                                    <dl>
+                                        <dt>Rosario National High School</dt>
+                                        <dd>Rosario, Cavite</dd>
+                                        <dd>
                                             <div class="group">
                                                 <span class="material-symbols-outlined">calendar_month</span>
 
                                                 <label for="year">2001 - 2006</label>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </dd>
+                                    </dl>
 
                                     <hr />
 
-                                    <div class="section">
-                                        <div class="title">Bancaan Elementary School</div>
-
-                                        <div class="body">
-                                            <label for="location">Bancaan, Naic, Cavite</label>
-
+                                    <dl>
+                                        <dt>Bancaan Elementary School</dt>
+                                        <dd>Bancaan, Naic, Cavite</dd>
+                                        <dd>
                                             <div class="group">
                                                 <span class="material-symbols-outlined">calendar_month</span>
 
                                                 <label for="year">1995 - 2001</label>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </dd>
+                                    </dl>
                                 </div>
                             </div>
                         </div>
@@ -248,61 +241,50 @@ class CurriculumVitae {
                                 </div>
 
                                 <div class="body">
-                                    <div class="section">
-                                        <div class="title">Multisys Technologies Corporation</div>
-
-                                        <div class="body">
-                                            <label for="position">Back-End Software Engineer</label>
-
-                                            <label for="department">Research and Development</label>
-
-                                            <label for="location">#14 Mt. Olives St., Multinational Village</label>
-
-                                            <label for="location">Moonwalk, Parañaque City, Philippines, 1708</label>
-
+                                    <dl>
+                                        <dt>Multisys Technologies Corporation</dt>
+                                        <dd>Back-End Software Engineer</dd>
+                                        <dd>Research and Development</dd>
+                                        <dd>#14 Mt. Olives St., Multinational Village</dd>
+                                        <dd>Moonwalk, Parañaque City, Philippines, 1708</dd>
+                                        <dd>
                                             <div class="group">
                                                 <span class="material-symbols-outlined">calendar_month</span>
 
                                                 <label for="year">September 2019 up to present</label>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </dd>
+                                    </dl>
 
                                     <hr />
 
-                                    <div class="section">
-                                        <div class="title">www.upwork.com (formerly oDesk)</div>
-
-                                        <div class="body">
-                                            <label for="position">Android Developer and Java Developer</label>
-
+                                    <dl>
+                                        <dt>www.upwork.com (formerly oDesk)</dt>
+                                        <dd>Android Developer and Java Developer</dd>
+                                        <dd>
                                             <div class="group">
                                                 <span class="material-symbols-outlined">calendar_month</span>
 
                                                 <label for="year">August 2016 - September 2019</label>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </dd>
+                                    </dl>
 
                                     <hr />
 
-                                    <div class="section">
-                                        <div class="title">Hocheng Philippines Corporation</div>
-
-                                        <div class="body">
-                                            <label for="position">Web Developer</label>
-
-                                            <label for="department">Management Information System of Operation Division</label>
-
-                                            <label for="location">Dasmariñas, Cavite</label>
-
+                                    <dl>
+                                        <dt>Hocheng Philippines Corporation</dt>
+                                        <dd>Web Developer</dd>
+                                        <dd>Management Information System of Operation Division</dd>
+                                        <dd>Dasmariñas, Cavite</dd>
+                                        <dd>
                                             <div class="group">
                                                 <span class="material-symbols-outlined">calendar_month</span>
 
                                                 <label for="year">March 2016 - August 2016</label>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </dd>
+                                    </dl>
                                 </div>
                             </div>
                         </div>
@@ -318,71 +300,61 @@ class CurriculumVitae {
                                 </div>
 
                                 <div class="body">
-                                    <div class="section">
-                                        <div class="title">Technical Essentials on AWS</div>
-
-                                        <div class="body">
-                                            <label for="location">Multisys Technologies Corporation - Manila Office</label>
-
-                                            <div class="group">
-                                                <span class="material-symbols-outlined">calendar_month</span>
-
-                                                <label for="year">March 02, 2020</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <hr />
-
-                                    <div class="section">
-                                        <div class="title">Architecting on AWS</div>
-
-                                        <div class="body">
-                                            <label for="location">Multisys Technologies Corporation - Manila Office</label>
-
+                                    <dl>
+                                        <dt>Architecting on AWS</dt>
+                                        <dd>Multisys Technologies Corporation - Manila Office</dd>
+                                        <dd>
                                             <div class="group">
                                                 <span class="material-symbols-outlined">calendar_month</span>
 
                                                 <label for="year">March 03, 2020 - March 05, 2020</label>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </dd>
+                                    </dl>
 
                                     <hr />
 
-                                    <div class="section">
-                                        <div class="title">7th Cavite ICT Youth Convention</div>
-
-                                        <div class="body">
-                                            <label for="location">SM Cinema Theater</label>
-
-                                            <label for="location">Bacoor City, Cavite</label>
-
+                                    <dl>
+                                        <dt>Technical Essentials on AWS</dt>
+                                        <dd>Multisys Technologies Corporation - Manila Office</dd>
+                                        <dd>
                                             <div class="group">
                                                 <span class="material-symbols-outlined">calendar_month</span>
 
-                                                <label for="year">January 25, 2013</label>
+                                                <label for="year">March 02, 2020</label>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </dd>
+                                    </dl>
 
                                     <hr />
 
-                                    <div class="section">
-                                        <div class="title">The Future of IT in Mobile Application, Web and Game Development</div>
-
-                                        <div class="body">
-                                            <label for="location">Lyceum of the Philippines - Cavite Campus</label>
-
-                                            <label for="location">Brgy. Manggahan, Gen. Trias, Cavite</label>
-
+                                    <dl>
+                                        <dt>The Future of IT in Mobile Application, Web and Game Development</dt>
+                                        <dd>Lyceum of the Philippines - Cavite Campus</dd>
+                                        <dd>Brgy. Manggahan, Gen. Trias, Cavite</dd>
+                                        <dd>
                                             <div class="group">
                                                 <span class="material-symbols-outlined">calendar_month</span>
 
                                                 <label for="year">August 30, 2013</label>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </dd>
+                                    </dl>
+
+                                    <hr />
+
+                                    <dl>
+                                        <dt>7th Cavite ICT Youth Convention</dt>
+                                        <dd>SM Cinema Theater</dd>
+                                        <dd>Bacoor City, Cavite</dd>
+                                        <dd>
+                                            <div class="group">
+                                                <span class="material-symbols-outlined">calendar_month</span>
+
+                                                <label for="year">January 25, 2013</label>
+                                            </div>
+                                        </dd>
+                                    </dl>
                                 </div>
                             </div>
                         </div>
@@ -398,60 +370,46 @@ class CurriculumVitae {
                                 </div>
 
                                 <div class="body">
-                                    <div class="section">
-                                        <div class="title">Date of Birth</div>
+                                    <div class="group">
+                                        <label for="key">Date of Birth: </label>
 
-                                        <div class="body">
-                                            <label for="location">May 26, 1988</label>
-                                        </div>
+                                        <label for="value">May 26, 1988</label>
                                     </div>
 
-                                    <div class="section">
-                                        <div class="title">Place of Birth</div>
+                                    <div class="group">
+                                        <label for="key">Place of Birth: </label>
 
-                                        <div class="body">
-                                            <label for="location">Rosario, Cavite</label>
-                                        </div>
+                                        <label for="value">Rosario, Cavite</label>
                                     </div>
 
-                                    <div class="section">
-                                        <div class="title">Height</div>
+                                    <div class="group">
+                                        <label for="key">Height: </label>
 
-                                        <div class="body">
-                                            <label for="location">5'5”</label>
-                                        </div>
+                                        <label for="value">5'5”</label>
                                     </div>
 
-                                    <div class="section">
-                                        <div class="title">Weight</div>
+                                    <div class="group">
+                                        <label for="key">Weight: </label>
 
-                                        <div class="body">
-                                            <label for="location">113 lbs.</label>
-                                        </div>
+                                        <label for="value">113 lbs.</label>
                                     </div>
 
-                                    <div class="section">
-                                        <div class="title">Gender</div>
+                                    <div class="group">
+                                        <label for="key">Gender: </label>
 
-                                        <div class="body">
-                                            <label for="location">Male</label>
-                                        </div>
+                                        <label for="value">Male</label>
                                     </div>
 
-                                    <div class="section">
-                                        <div class="title">Civil Status</div>
+                                    <div class="group">
+                                        <label for="key">Civil Status: </label>
 
-                                        <div class="body">
-                                            <label for="location">Single</label>
-                                        </div>
+                                        <label for="value">Single</label>
                                     </div>
 
-                                    <div class="section">
-                                        <div class="title">Citizenship</div>
+                                    <div class="group">
+                                        <label for="key">Citizenship: </label>
 
-                                        <div class="body">
-                                            <label for="location">Filipino</label>
-                                        </div>
+                                        <label for="value">Filipino</label>
                                     </div>
                                 </div>
                             </div>
